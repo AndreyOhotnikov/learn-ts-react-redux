@@ -6,7 +6,7 @@ import { useAction } from "../hooks/useAction";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 // import { fetchUsers } from "../store/action-creators";
 
-const TodoList: React.FC = () => {
+const UserList: React.FC = () => {
   const {error, loading, users} = useTypedSelector(state => state.user);
   const {fetchUsers} = useAction()
 
@@ -32,4 +32,4 @@ const TodoList: React.FC = () => {
   )
 }
 
-export default TodoList;
+export default UserList;
