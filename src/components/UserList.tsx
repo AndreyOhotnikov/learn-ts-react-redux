@@ -4,9 +4,9 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useAction } from "../hooks/useAction";
 import { useTypedSelector } from "../hooks/useTypedSelector";
-import { fetchUsers } from "../store/action-creators/user";
+// import { fetchUsers } from "../store/action-creators";
 
-const UserList: React.FC = () => {
+const TodoList: React.FC = () => {
   const {error, loading, users} = useTypedSelector(state => state.user);
   const {fetchUsers} = useAction()
 
@@ -32,4 +32,4 @@ const UserList: React.FC = () => {
   )
 }
 
-export default UserList;
+export default TodoList;
